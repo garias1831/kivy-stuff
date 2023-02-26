@@ -1,0 +1,10 @@
+BoxLayout:
+    orientation:'vertical'
+    Button:
+        text:'I exist'
+    ScrollableImg:
+        canvas.before:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: 'peanut.png'
