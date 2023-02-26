@@ -1,0 +1,13 @@
+BoxLayout:
+    orientation:'vertical'
+    
+    Button:
+        text: 'an ordinary button'
+    Touch:
+        canvas.before:
+            Color:
+                rgba: 1, .34, .43, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
