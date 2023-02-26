@@ -1,0 +1,25 @@
+#: import NoTransition kivy.uix.screenmanager.NoTransition
+ScreenManager:
+    transition: NoTransition()
+    MainWindow:
+    SettingsWindow:
+
+
+<MainWindow>:
+    name: 'start'
+    BoxLayout:
+        orientation:'vertical'
+        Button:
+            text:'go to settings'
+            on_release: app.root.current = 'settings'
+        Label:
+            text:'Welcome to my epic app'
+
+<SettingsWindow>:
+    name: 'settings'
+    BoxLayout:
+        Label:
+            text:'Hardware stuff'
+        Button:
+            text: 'back 2 start'
+            on_release: app.root.current = 'start'
