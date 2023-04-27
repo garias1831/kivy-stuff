@@ -1,0 +1,12 @@
+TheView:
+    btn_gen: btn_gen
+    orientation: 'vertical'
+    Button:
+        text:'Bucks in 4'
+        size_hint: 0.1, 0.1
+        #Binding with kv here..
+        on_press: root.clear(self)
+    ButtonGen:
+        id: btn_gen
+        orientation: 'horizontal'
+        padding: ('100dp', '100dp', '100dp', '100dp')
