@@ -17,10 +17,8 @@ class MyButton(Button):
     def on_release(self):
         self.count += 1
 
-class MyApp(App):
-    def build(self):
-        button = MyButton(text='Click me!')
-        return button
+class PropsApp(App):
+    pass
 
 if __name__ == '__main__':
-    MyApp().run()
+    PropsApp().run()
